@@ -15,9 +15,18 @@ To write a Python program to calculate the **sum of all digits** in a number usi
 6. **Stop**
 
 ## 💻 PROGRAM:
-
-ADD CODE HERE
-
+~~~c
+def sum_of_digits(n):
+    if n == 0:
+        return 0
+    else:
+        return n % 10 + sum_of_digits(n // 10)
+number = int(input("Enter a number: "))
+print(f"Sum of digits of {number} is:", sum_of_digits(abs(number)))
+~~~
 ## OUTPUT
+![Screenshot 2025-05-11 134851](https://github.com/user-attachments/assets/eb8259e4-5973-4162-a4d7-5efdd711a3bd)
+
 
 ## RESULT
+Thus the program has been executed successfully.
